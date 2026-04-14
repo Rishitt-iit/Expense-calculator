@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cyber-Hub | All-in-One Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-database-compat.js"></script>
+</head>
+<body>
+
+    <div class="sidebar">
+        <h2>CYBER-HUB</h2>
+        <button onclick="showTab('bot')">🤖 Cyber-Bot</button>
+        <button onclick="showTab('expense')">💸 Expense Manager</button>
+        <button onclick="showTab('bhandara')">🙏 Bhandara Tracker</button>
+    </div>
+
+    <div class="main-content">
+        <div id="bot" class="tab-content active">
+            <h2>Cyber-Bot v2.0</h2>
+            <div id="chat-box" class="chat-box"></div>
+            <div class="input-group">
+                <input type="text" id="bot-input" placeholder="Say hello...">
+                <button onclick="runBot()">Send</button>
+            </div>
+        </div>
+
+        <div id="expense" class="tab-content">
+            <h2>Expense Cloud</h2>
+            <div class="input-group">
+                <input type="text" id="exp-item" placeholder="Item">
+                <input type="number" id="exp-price" placeholder="Price">
+                <button onclick="saveExpense()">Add</button>
+            </div>
+            <button class="share-btn" onclick="copyLink()">🔗 Copy Share Link</button>
+            <table border="1">
+                <thead><tr><th>Item</th><th>Price</th></tr></thead>
+                <tbody id="exp-body"></tbody>
+            </table>
+        </div>
+
+        <div id="bhandara" class="tab-content">
+            <h2>Bhandara Management</h2>
+            <div class="input-group">
+                <input type="text" id="bh-name" placeholder="Donor Name">
+                <input type="number" id="bh-amt" placeholder="Amount">
+                <button onclick="saveBhandara()">Record</button>
+            </div>
+            <h3>Total: ₹<span id="bh-total">0</span></h3>
+            <table border="1">
+                <tbody id="bh-body"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
