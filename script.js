@@ -1,8 +1,11 @@
-// 1. Firebase Config (Apna wala paste karo yahan)
 const firebaseConfig = {
-    apiKey: "YOUR_API_KEY",
-    databaseURL: "https://YOUR_ID.firebaseio.com",
-    projectId: "YOUR_PROJECT_ID",
+  apiKey: "AIzaSyCTcu0x0bCO393PEo9oAIc3kwbXurFarIc",
+  authDomain: "expense-calculator-5324a.firebaseapp.com",
+  databaseURL: "https://expense-calculator-5324a-default-rtdb.firebaseio.com",
+  projectId: "expense-calculator-5324a",
+  storageBucket: "expense-calculator-5324a.firebasestorage.app",
+  messagingSenderId: "485767568756",
+  appId: "1:485767568756:web:af7fb2a72ad2ceb8e16021"
 };
 firebase.initializeApp(firebaseConfig);
 const db = firebase.database();
