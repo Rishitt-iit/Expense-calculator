@@ -35,4 +35,4 @@ The **Cyber-Hub** is designed for users who want a centralized place for their d
 5. Open `index.html` in any modern web browser.
 
 ---
-**Developer Note:** Created by a passionate Class 9 student. Learning the depths of Full-Stack development one project at a time!
+**Developer Note:** Created by a passionate Class 9 student. Learning the depths of Full-Stack development one project at a time!(This is my first time to devlop a project with google firebase )
